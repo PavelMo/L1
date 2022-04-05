@@ -15,7 +15,6 @@ func main() {
 
 	for _, val := range arr {
 		wg.Add(1)
-		//В функции работаем с указателем в памяти на сумму
 		go SumOfSquares(val, &sum, &mu, &wg)
 	}
 	wg.Wait()
