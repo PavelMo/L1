@@ -21,6 +21,7 @@ func main() {
 			}
 		}
 	}()
+	time.Sleep(1 * time.Second)
 	cancel()
 	time.Sleep(1 * time.Second)
 	fmt.Println("Stopped gourutine 1.... \n")
@@ -39,7 +40,7 @@ func main() {
 			}
 		}
 	}()
-
+	time.Sleep(1 * time.Second)
 	done <- struct{}{}
 	time.Sleep(1 * time.Second)
 	fmt.Println("Stopped gourutine 2.... \n")
